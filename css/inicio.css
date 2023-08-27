@@ -318,57 +318,76 @@ footer li{
 /*menu hamburguesa*/
 .nav__label {
     display: none;
-  }
-
-  .nav {
+}
+.nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .nav li a {
+.nav li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-  }
-  @media screen and (max-width: 415px) {
-    body{
-        min-height: 100vh;
+}
+@media screen and (max-width: 415px) {
+    .que-son-las-finanzas, .objetivo{
+        width: 300px;
     }
-    .nav__label {
-      display: block;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      margin-right: 20px;
+.nav__label {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
     }
 #menu{
     visibility: hidden;
 }
-    .nav {
-      display: none;
-      flex-direction: column;
-      background-color: #333333;
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
+.nav {
+    display: none;
+    flex-direction: column;
+    background-color: #333333;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
     }
-
-    .nav li a {
-      display: block;
-      padding: 20px;
-      border-bottom: 1px solid white;
+.que-son-las-finanzas h2{
+    line-height: 50px;
+}
+.nav li a {
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid white;
     }
     #menu:checked + .nav {
-      display: flex;
+    display: flex;
     }
     .img-objetivo, .img-descripcion{
         display: none;
     }
-  }
+    .objetivo{
+        margin: 30px 20px;
+    }
+    .objetivo{
+        display: none;
+    }
+    /*pag consecuencias*/
+    .img-consecuencias{
+        display: none;
+    }
+    .introduccion-consecuencias {
+        padding: 0;
+        margin: 30px 20px;
+    }
+    .lista-consecuencias-container, .lista-consecuencias, .list{
+        padding: 0;
+    }
+}
+        
